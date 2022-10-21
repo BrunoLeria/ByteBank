@@ -19,16 +19,17 @@ class Editor extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: TextField(
-          controller: controlador,
-          style: TextStyle(
-            fontSize: tamanhoFonte,
-          ),
-          decoration: InputDecoration(
-            icon: icone,
-            labelText: rotulo,
-            hintText: dica,
-          ),
-          keyboardType: TextInputType.number),
+        controller: controlador,
+        style: TextStyle(
+          fontSize: tamanhoFonte,
+        ),
+        decoration: InputDecoration(
+          icon: icone,
+          labelText: rotulo,
+          hintText: dica,
+        ),
+        keyboardType: TextInputType.number,
+      ),
     );
   }
 }
